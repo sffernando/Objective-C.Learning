@@ -66,7 +66,16 @@
     NSString *str8 = [NSString stringWithFormat:@"Father's superClassName is [%@]",NSStringFromClass([Father superclass])];
     NSString *str9 = [NSString stringWithFormat:@"NSObject's className is [%@]",NSStringFromClass([NSObject class])];
     NSString *str10 = [NSString stringWithFormat:@"NSObject's superClassName is [%@]",NSStringFromClass([NSObject superclass])];
-    itemList = @[str1, str2, str3, str4, str5, str6, str7, str8, str9, str10];
+    
+    NSString *str11 = [NSString stringWithFormat:@"[Son class]isKindOfClass:[NSObject class]%d",[(id)[Son class] isKindOfClass:[NSObject class]]];
+    NSString *str12 = [NSString stringWithFormat:@"[Son class]isMOClass:[NSObject class]%d",[(id)[Son class] isMemberOfClass:[NSObject class]]];
+    NSString *str13 = [NSString stringWithFormat:@"[Son class]isKindOfClass:[Father class]%d",[(id)[Son class] isKindOfClass:[Father class]]];
+    NSString *str14 = [NSString stringWithFormat:@"[Son class]isMemberOfClass:[Father class]%d",[(id)[Son class] isMemberOfClass:[Father class]]];
+    NSString *str15 = [NSString stringWithFormat:@"son isKindOfClass:[NSObject class]%d",[son isKindOfClass:[NSObject class]]];
+    NSString *str16 = [NSString stringWithFormat:@"son isMemberOfClass:[NSObject class]%d",[son isMemberOfClass:[NSObject class]]];
+    NSString *str17 = [NSString stringWithFormat:@"son isKindOfClass:[Father class]%d",[son isKindOfClass:[Father class]]];
+    NSString *str18 = [NSString stringWithFormat:@"son isMemberOfClass:[Father class]%d",[son isMemberOfClass:[Father class]]];
+    itemList = @[str1, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11, str12, str13, str14, str15, str16, str17, str18];
 }
 
 - (void)didReceiveMemoryWarning {

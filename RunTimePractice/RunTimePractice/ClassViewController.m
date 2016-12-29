@@ -1,32 +1,72 @@
 //
-//  TableViewController.m
+//  ClassViewController.m
 //  RunTimePractice
 //
 //  Created by fernando on 2016/12/29.
 //  Copyright © 2016年 fernando. All rights reserved.
 //
 
-#import "TableViewController.h"
 #import "ClassViewController.h"
+#import <objc/objc-runtime.h>
+#import <objc/NSObjCRuntime.h>
 
-@interface TableViewController () {
+@interface Father : NSObject
+
+@end
+@implementation Father
+
+
+
+@end
+@interface Son : Father
+
+@end
+
+@implementation Son
+
+
+@end
+
+@interface ClassViewController () {
     NSArray *itemList;
+    Father *father;
+    Son *son;
 }
 
 @end
 
-@implementation TableViewController
+@implementation ClassViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    /*
+    self 是类的隐藏的参数，指向当前调用方法的类，另一个隐藏参数是 _cmd，代表当前类方法的 selector。这里只关注这个 self。super 是个啥？super 并不是隐藏的参数，它只是一个“编译器指示符”，它和 self 指向的是相同的消息接收者，拿上面的代码为例，不论是用 [self setName] 还是 [super setName]，接收“setName”这个消息的接收者都是 PersonMe* me 这个对象。不同的是，super 告诉编译器，当调用 setName 的方法时，要去调用父类的方法，而不是本类里的。
+    
+    当使用 self 调用方法时，会从当前类的方法列表中开始找，如果没有，就从父类中再找；而当使用 super 时，则从父类的方法列表中开始找。然后调用父类的这个方法
+    */
     
     // Uncomment the following line to preserve selection between presentations.
-     self.clearsSelectionOnViewWillAppear = NO;
+    // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-     self.navigationItem.rightBarButtonItem = self.editButtonItem;
+     self.navigationItem.title = @"self & super";
+    father = [[Father alloc] init];
+    son = [[Son alloc] init];
     
-    itemList = @[@"class", @"opration", @"ivar & property", @"associatedObject", @"selector", @"method swizzling "];
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseIdentifier"];
+    
+    NSString *str1 = [NSString stringWithFormat:@"self's className is [%@]",NSStringFromClass([self class])];
+    NSString *str2 = [NSString stringWithFormat:@"super's className is [%@]",NSStringFromClass([super class])];
+    NSString *str3 = [NSString stringWithFormat:@"self's superClassName is [%@]",NSStringFromClass([self superclass])];
+    NSString *str4 = [NSString stringWithFormat:@"super's superClassName is [%@]",NSStringFromClass([super superclass])];
+    NSString *str5 = [NSString stringWithFormat:@"Son's className is [%@]",NSStringFromClass([Son class])];
+    NSString *str6 = [NSString stringWithFormat:@"Father's className is [%@]",NSStringFromClass([Father class])];
+    NSString *str7 = [NSString stringWithFormat:@"Sone's superClassName is [%@]",NSStringFromClass([Son superclass])];
+    NSString *str8 = [NSString stringWithFormat:@"Father's superClassName is [%@]",NSStringFromClass([Father superclass])];
+    NSString *str9 = [NSString stringWithFormat:@"NSObject's className is [%@]",NSStringFromClass([NSObject class])];
+    NSString *str10 = [NSString stringWithFormat:@"NSObject's superClassName is [%@]",NSStringFromClass([NSObject superclass])];
+    itemList = @[str1, str2, str3, str4, str5, str6, str7, str8, str9, str10];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,12 +93,6 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        ClassViewController *c = [[ClassViewController alloc] init];
-        [self.navigationController pushViewController:c animated:YES];
-    }
-}
 
 /*
 // Override to support conditional editing of the table view.

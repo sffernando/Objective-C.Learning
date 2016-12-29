@@ -15,6 +15,7 @@
 		EDEE51311E14B51500C07F62 /* RunTimePracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEE51301E14B51500C07F62 /* RunTimePracticeTests.m */; };
 		EDEE513C1E14B51500C07F62 /* RunTimePracticeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEE513B1E14B51500C07F62 /* RunTimePracticeUITests.m */; };
 		EDEE514B1E14B5C200C07F62 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEE514A1E14B5C200C07F62 /* TableViewController.m */; };
+		EDEE51541E14F3D500C07F62 /* ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEE51531E14F3D500C07F62 /* ClassViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		EDEE513D1E14B51500C07F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDEE51491E14B5C200C07F62 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		EDEE514A1E14B5C200C07F62 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		EDEE51521E14F3D500C07F62 /* ClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassViewController.h; sourceTree = "<group>"; };
+		EDEE51531E14F3D500C07F62 /* ClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				EDEE511A1E14B51500C07F62 /* AppDelegate.m */,
 				EDEE51491E14B5C200C07F62 /* TableViewController.h */,
 				EDEE514A1E14B5C200C07F62 /* TableViewController.m */,
+				EDEE51521E14F3D500C07F62 /* ClassViewController.h */,
+				EDEE51531E14F3D500C07F62 /* ClassViewController.m */,
 				EDEE511F1E14B51500C07F62 /* Main.storyboard */,
 				EDEE51221E14B51500C07F62 /* Assets.xcassets */,
 				EDEE51241E14B51500C07F62 /* LaunchScreen.storyboard */,
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDEE511B1E14B51500C07F62 /* AppDelegate.m in Sources */,
+				EDEE51541E14F3D500C07F62 /* ClassViewController.m in Sources */,
 				EDEE51181E14B51500C07F62 /* main.m in Sources */,
 				EDEE514B1E14B5C200C07F62 /* TableViewController.m in Sources */,
 			);
@@ -505,6 +511,7 @@
 				EDEE51421E14B51500C07F62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDEE51431E14B51500C07F62 /* Build configuration list for PBXNativeTarget "RunTimePracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +520,7 @@
 				EDEE51451E14B51500C07F62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDEE51461E14B51500C07F62 /* Build configuration list for PBXNativeTarget "RunTimePracticeUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +529,7 @@
 				EDEE51481E14B51500C07F62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

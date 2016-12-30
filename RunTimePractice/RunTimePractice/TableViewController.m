@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import "ClassViewController.h"
+#import "OperateTableViewController.h"
 
 @interface TableViewController () {
     NSArray *itemList;
@@ -56,6 +57,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         ClassViewController *c = [[ClassViewController alloc] init];
+        [self.navigationController pushViewController:c animated:YES];
+    } else if (indexPath.row == 1) {
+        OperateTableViewController *c = [[OperateTableViewController alloc] init];
         [self.navigationController pushViewController:c animated:YES];
     }
 }

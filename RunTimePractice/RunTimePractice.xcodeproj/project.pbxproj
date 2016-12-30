@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED8AA6F61E15FC5600152C76 /* OperateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8AA6F51E15FC5500152C76 /* OperateTableViewController.m */; };
 		EDEE51181E14B51500C07F62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEE51171E14B51500C07F62 /* main.m */; };
 		EDEE511B1E14B51500C07F62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEE511A1E14B51500C07F62 /* AppDelegate.m */; };
 		EDEE51211E14B51500C07F62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEE511F1E14B51500C07F62 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED8AA6F41E15FC5500152C76 /* OperateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperateTableViewController.h; sourceTree = "<group>"; };
+		ED8AA6F51E15FC5500152C76 /* OperateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperateTableViewController.m; sourceTree = "<group>"; };
 		EDEE51131E14B51500C07F62 /* RunTimePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTimePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDEE51171E14B51500C07F62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDEE51191E14B51500C07F62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				EDEE514A1E14B5C200C07F62 /* TableViewController.m */,
 				EDEE51521E14F3D500C07F62 /* ClassViewController.h */,
 				EDEE51531E14F3D500C07F62 /* ClassViewController.m */,
+				ED8AA6F41E15FC5500152C76 /* OperateTableViewController.h */,
+				ED8AA6F51E15FC5500152C76 /* OperateTableViewController.m */,
 				EDEE511F1E14B51500C07F62 /* Main.storyboard */,
 				EDEE51221E14B51500C07F62 /* Assets.xcassets */,
 				EDEE51241E14B51500C07F62 /* LaunchScreen.storyboard */,
@@ -278,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8AA6F61E15FC5600152C76 /* OperateTableViewController.m in Sources */,
 				EDEE511B1E14B51500C07F62 /* AppDelegate.m in Sources */,
 				EDEE51541E14F3D500C07F62 /* ClassViewController.m in Sources */,
 				EDEE51181E14B51500C07F62 /* main.m in Sources */,

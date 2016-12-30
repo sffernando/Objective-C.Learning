@@ -7,8 +7,6 @@
 //
 
 #import "ClassViewController.h"
-#import <objc/objc-runtime.h>
-#import <objc/NSObjCRuntime.h>
 
 @interface Father : NSObject
 
@@ -75,6 +73,15 @@
     NSString *str16 = [NSString stringWithFormat:@"son isMemberOfClass:[NSObject class]%d",[son isMemberOfClass:[NSObject class]]];
     NSString *str17 = [NSString stringWithFormat:@"son isKindOfClass:[Father class]%d",[son isKindOfClass:[Father class]]];
     NSString *str18 = [NSString stringWithFormat:@"son isMemberOfClass:[Father class]%d",[son isMemberOfClass:[Father class]]];
+    
+    
+    /*
+    accepted
+isKindOfClass: returns YES if the receiver is an instance of the specified class or an instance of any class that inherits from the specified class.
+    
+    isMemberOfClass: returns YES if the receiver is an instance of the specified class.
+        */
+    
     itemList = @[str1, str2, str3, str4, str5, str6, str7, str8, str9, str10, str11, str12, str13, str14, str15, str16, str17, str18];
 }
 

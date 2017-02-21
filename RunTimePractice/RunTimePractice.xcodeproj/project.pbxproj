@@ -10,6 +10,8 @@
 		ED8AA6F61E15FC5600152C76 /* OperateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8AA6F51E15FC5500152C76 /* OperateTableViewController.m */; };
 		EDA8D1F81E5C82F9006E176E /* AssociatedObjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8D1F71E5C82F9006E176E /* AssociatedObjViewController.m */; };
 		EDA8D1FB1E5C83DB006E176E /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8D1FA1E5C83DB006E176E /* NSDate+Category.m */; };
+		EDA8D1FE1E5C8846006E176E /* UIViewController+swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8D1FD1E5C8846006E176E /* UIViewController+swizzling.m */; };
+		EDA8D2011E5C8A63006E176E /* SwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8D2001E5C8A63006E176E /* SwizzlingViewController.m */; };
 		EDEE51181E14B51500C07F62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEE51171E14B51500C07F62 /* main.m */; };
 		EDEE511B1E14B51500C07F62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEE511A1E14B51500C07F62 /* AppDelegate.m */; };
 		EDEE51211E14B51500C07F62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEE511F1E14B51500C07F62 /* Main.storyboard */; };
@@ -45,6 +47,10 @@
 		EDA8D1F71E5C82F9006E176E /* AssociatedObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssociatedObjViewController.m; sourceTree = "<group>"; };
 		EDA8D1F91E5C83DB006E176E /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
 		EDA8D1FA1E5C83DB006E176E /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
+		EDA8D1FC1E5C8846006E176E /* UIViewController+swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+swizzling.h"; sourceTree = "<group>"; };
+		EDA8D1FD1E5C8846006E176E /* UIViewController+swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+swizzling.m"; sourceTree = "<group>"; };
+		EDA8D1FF1E5C8A63006E176E /* SwizzlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwizzlingViewController.h; sourceTree = "<group>"; };
+		EDA8D2001E5C8A63006E176E /* SwizzlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwizzlingViewController.m; sourceTree = "<group>"; };
 		EDEE51131E14B51500C07F62 /* RunTimePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTimePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDEE51171E14B51500C07F62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDEE51191E14B51500C07F62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +136,10 @@
 				EDA8D1F71E5C82F9006E176E /* AssociatedObjViewController.m */,
 				EDA8D1F91E5C83DB006E176E /* NSDate+Category.h */,
 				EDA8D1FA1E5C83DB006E176E /* NSDate+Category.m */,
+				EDA8D1FC1E5C8846006E176E /* UIViewController+swizzling.h */,
+				EDA8D1FD1E5C8846006E176E /* UIViewController+swizzling.m */,
+				EDA8D1FF1E5C8A63006E176E /* SwizzlingViewController.h */,
+				EDA8D2001E5C8A63006E176E /* SwizzlingViewController.m */,
 			);
 			path = RunTimePractice;
 			sourceTree = "<group>";
@@ -293,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA8D2011E5C8A63006E176E /* SwizzlingViewController.m in Sources */,
+				EDA8D1FE1E5C8846006E176E /* UIViewController+swizzling.m in Sources */,
 				EDA8D1F81E5C82F9006E176E /* AssociatedObjViewController.m in Sources */,
 				ED8AA6F61E15FC5600152C76 /* OperateTableViewController.m in Sources */,
 				EDA8D1FB1E5C83DB006E176E /* NSDate+Category.m in Sources */,

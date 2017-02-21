@@ -10,6 +10,8 @@
 #import "ClassViewController.h"
 #import "OperateTableViewController.h"
 #import "AssociatedObjViewController.h"
+#import "SwizzlingViewController.h"
+
 
 @interface TableViewController () {
     NSArray *itemList;
@@ -62,8 +64,9 @@
     } else if (indexPath.row == 1) {
         OperateTableViewController *c = [[OperateTableViewController alloc] init];
         [self.navigationController pushViewController:c animated:YES];
-    } else if (indexPath.row == 2) {
-        
+    } else if (indexPath.row == 5) {
+        SwizzlingViewController *c = [[SwizzlingViewController alloc] init];
+        [self.navigationController pushViewController:c animated:YES];
     } else if (indexPath.row == 3) {
         AssociatedObjViewController *c = [[AssociatedObjViewController alloc] init];
         [self.navigationController pushViewController:c animated:YES];

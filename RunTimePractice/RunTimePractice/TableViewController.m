@@ -9,6 +9,7 @@
 #import "TableViewController.h"
 #import "ClassViewController.h"
 #import "OperateTableViewController.h"
+#import "AssociatedObjViewController.h"
 
 @interface TableViewController () {
     NSArray *itemList;
@@ -60,6 +61,11 @@
         [self.navigationController pushViewController:c animated:YES];
     } else if (indexPath.row == 1) {
         OperateTableViewController *c = [[OperateTableViewController alloc] init];
+        [self.navigationController pushViewController:c animated:YES];
+    } else if (indexPath.row == 2) {
+        
+    } else if (indexPath.row == 3) {
+        AssociatedObjViewController *c = [[AssociatedObjViewController alloc] init];
         [self.navigationController pushViewController:c animated:YES];
     }
 }

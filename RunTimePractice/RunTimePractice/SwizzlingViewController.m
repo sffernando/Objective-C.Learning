@@ -20,7 +20,12 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"swizzling";
     self.view.backgroundColor = [UIColor whiteColor];
-    NSLog(@"我也执行了");
+    NSLog(@"viewDidLoad我也执行了");
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"viewWillAppear我也执行了");
 }
 
 - (void)didReceiveMemoryWarning {

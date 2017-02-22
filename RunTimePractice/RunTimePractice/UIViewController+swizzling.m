@@ -33,6 +33,19 @@
         } else {
             method_exchangeImplementations(originalMethod, swizzleMethod);
         }
+        
+        SEL selector1 = @selector(viewDidLoad);
+        SEL selector2 = @selector(swizzlingViewDidLoad);
+        
+        Method method1 = class_getInstanceMethod(class, selector1);
+        Method method2 = class_getInstanceMethod(class, selector2);
+        
+        BOOL add = class_addMethod(class, selector1, method_getImplementation(method1), method_getTypeEncoding(method1));
+        if (add) {
+            class_replaceMethod(class, selector1, method_getImplementation(method2), method_getTypeEncoding(method2));
+        } else {
+            method_exchangeImplementations(method1, method2);
+        }
     });
 }
 

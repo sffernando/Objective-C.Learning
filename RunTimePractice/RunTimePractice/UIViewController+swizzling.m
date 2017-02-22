@@ -12,10 +12,6 @@
 @implementation UIViewController (swizzling)
 
 + (void)load {
-//    Method method1 = class_getInstanceMethod([self class], @selector(viewDidLoad));
-//    Method method2 = class_getInstanceMethod([self class], @selector(swizzlingViewDidLoad));
-//    
-//    method_exchangeImplementations(method1, method2);
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

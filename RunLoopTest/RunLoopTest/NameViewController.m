@@ -11,6 +11,8 @@
 @interface NameViewController ()
 {
     NSThread *thread1;
+    NSThread *thread2;
+    NSThread *thread3;
 }
 @end
 
@@ -28,13 +30,36 @@
     
     thread1 = [[NSThread alloc] initWithTarget:self selector:@selector(test) object:nil];
     [thread1 start];
+    
+    thread2 = [[NSThread alloc] initWithTarget:self selector:@selector(test1) object:nil];
+    [thread2 start];
 }
 
 - (void)test {
     NSRunLoop *runloop1 = [NSRunLoop currentRunLoop];
     NSLog(@"currentThread = %p", thread1);
+    NSLog(@"currentrunloop1 11111 = %p", runloop1);
     NSLog(@"1111111");
     [thread1 cancel];
+}
+
+- (void)test1 {
+    NSRunLoop *runloop1 = [NSRunLoop currentRunLoop];
+    NSLog(@"currentThread = %p", thread2);
+    NSLog(@"currentrunloop1 22222 = %p", runloop1);
+    NSLog(@"22222");
+    
+    thread3 = [[NSThread alloc] initWithTarget:self selector:@selector(test2) object:nil];
+    [thread3 start];
+}
+
+- (void)test2 {
+    NSRunLoop *runloop1 = [NSRunLoop currentRunLoop];
+    NSLog(@"currentThread = %p", thread3);
+    NSLog(@"currentrunloop1 3333 = %p", runloop1);
+    NSLog(@"3333");
+    [thread2 cancel];
+    [thread3 cancel];
 }
 
 - (void)didReceiveMemoryWarning {

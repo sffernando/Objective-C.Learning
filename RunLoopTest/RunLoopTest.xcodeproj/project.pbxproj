@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		EDCF2B8E1E63256100E0DBBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2B8D1E63256100E0DBBC /* main.m */; };
 		EDCF2B911E63256100E0DBBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2B901E63256100E0DBBC /* AppDelegate.m */; };
-		EDCF2B941E63256100E0DBBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2B931E63256100E0DBBC /* ViewController.m */; };
 		EDCF2B971E63256100E0DBBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCF2B951E63256100E0DBBC /* Main.storyboard */; };
 		EDCF2B991E63256100E0DBBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCF2B981E63256100E0DBBC /* Assets.xcassets */; };
 		EDCF2B9C1E63256100E0DBBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCF2B9A1E63256100E0DBBC /* LaunchScreen.storyboard */; };
 		EDCF2BA71E63256100E0DBBC /* RunLoopTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2BA61E63256100E0DBBC /* RunLoopTestTests.m */; };
 		EDCF2BB21E63256100E0DBBC /* RunLoopTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2BB11E63256100E0DBBC /* RunLoopTestUITests.m */; };
+		EDCF2BC11E6325D900E0DBBC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2BC01E6325D900E0DBBC /* TableViewController.m */; };
+		EDCF2BC41E63279600E0DBBC /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2BC31E63279600E0DBBC /* NameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		EDCF2B8D1E63256100E0DBBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDCF2B8F1E63256100E0DBBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EDCF2B901E63256100E0DBBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EDCF2B921E63256100E0DBBC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EDCF2B931E63256100E0DBBC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EDCF2B961E63256100E0DBBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDCF2B981E63256100E0DBBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDCF2B9B1E63256100E0DBBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,10 @@
 		EDCF2BAD1E63256100E0DBBC /* RunLoopTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunLoopTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCF2BB11E63256100E0DBBC /* RunLoopTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopTestUITests.m; sourceTree = "<group>"; };
 		EDCF2BB31E63256100E0DBBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDCF2BBF1E6325D900E0DBBC /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		EDCF2BC01E6325D900E0DBBC /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		EDCF2BC21E63279600E0DBBC /* NameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameViewController.h; sourceTree = "<group>"; };
+		EDCF2BC31E63279600E0DBBC /* NameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +106,15 @@
 			children = (
 				EDCF2B8F1E63256100E0DBBC /* AppDelegate.h */,
 				EDCF2B901E63256100E0DBBC /* AppDelegate.m */,
-				EDCF2B921E63256100E0DBBC /* ViewController.h */,
-				EDCF2B931E63256100E0DBBC /* ViewController.m */,
 				EDCF2B951E63256100E0DBBC /* Main.storyboard */,
 				EDCF2B981E63256100E0DBBC /* Assets.xcassets */,
 				EDCF2B9A1E63256100E0DBBC /* LaunchScreen.storyboard */,
 				EDCF2B9D1E63256100E0DBBC /* Info.plist */,
 				EDCF2B8C1E63256100E0DBBC /* Supporting Files */,
+				EDCF2BBF1E6325D900E0DBBC /* TableViewController.h */,
+				EDCF2BC01E6325D900E0DBBC /* TableViewController.m */,
+				EDCF2BC21E63279600E0DBBC /* NameViewController.h */,
+				EDCF2BC31E63279600E0DBBC /* NameViewController.m */,
 			);
 			path = RunLoopTest;
 			sourceTree = "<group>";
@@ -273,9 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDCF2B941E63256100E0DBBC /* ViewController.m in Sources */,
 				EDCF2B911E63256100E0DBBC /* AppDelegate.m in Sources */,
+				EDCF2BC11E6325D900E0DBBC /* TableViewController.m in Sources */,
 				EDCF2B8E1E63256100E0DBBC /* main.m in Sources */,
+				EDCF2BC41E63279600E0DBBC /* NameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NameViewController.h
 //  RunLoopTest
 //
 //  Created by fernando on 2017/2/26.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NameViewController : UIViewController
 
 @end
-

@@ -52,6 +52,8 @@
     [runloop1 performInModes:@[NSRunLoopCommonModes] block:^{
         sleep(5);
         NSLog(@"我就是我，是颜色不一样的烟火");
+        [thread2 cancel];
+        thread2 = nil;
     }];
         NSLog(@"currentrunloop1 22222 = %p", runloop1);
         [runloop1 run];

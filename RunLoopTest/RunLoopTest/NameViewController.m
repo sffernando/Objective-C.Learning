@@ -44,13 +44,37 @@
 }
 
 - (void)test1 {
-    NSRunLoop *runloop1 = [NSRunLoop currentRunLoop];
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+        NSRunLoop *runloop1 = [NSRunLoop currentRunLoop];
+//        NSTimer *timer = [NSTimer timerWithTimeInterval:2 target:self selector:@selector(printSth) userInfo:nil repeats:YES];
+//        [runloop1 addTimer:timer forMode:NSRunLoopCommonModes];
+    [runloop1 performInModes:@[NSRunLoopCommonModes] block:^{
+        sleep(5);
+        NSLog(@"我就是我，是颜色不一样的烟火");
+    }];
+        NSLog(@"currentrunloop1 22222 = %p", runloop1);
+        [runloop1 run];
+//    });
+    sleep(20);
     NSLog(@"currentThread = %p", thread2);
-    NSLog(@"currentrunloop1 22222 = %p", runloop1);
     NSLog(@"22222");
     
-    thread3 = [[NSThread alloc] initWithTarget:self selector:@selector(test2) object:nil];
-    [thread3 start];
+//    thread3 = [[NSThread alloc] initWithTarget:self selector:@selector(test2) object:nil];
+//    [thread3 start];
+}
+
+- (void)printSth {
+    NSLog(@"currentThread == %p",[NSThread currentThread]);
+    
+    NSLog(@"thread2 = %p",thread2);
+    
+    printf("aaaaaaaaaaaaaa================\n");
+    
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        [self performSelector:@selector(test1) onThread:thread2 withObject:nil waitUntilDone:YES];
+//    });
 }
 
 - (void)test2 {

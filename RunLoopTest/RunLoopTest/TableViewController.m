@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import "NameViewController.h"
+#import "NameViewController1.h"
 
 @interface TableViewController () {
     NSArray *itemList;
@@ -24,7 +25,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    itemList = @[@"runloop name"];
+    itemList = @[@"runloop name(MRC)", @"runloop name(ARC)"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,6 +56,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         NameViewController *c = [[NameViewController alloc] init];
+        [self.navigationController pushViewController:c animated:YES];
+    } else if (indexPath.row == 1) {
+        NameViewController1 *c = [[NameViewController1 alloc] init];
         [self.navigationController pushViewController:c animated:YES];
     }
 }

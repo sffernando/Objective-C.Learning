@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EDAEB6401E6713850068E399 /* NameViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAEB63F1E6713850068E399 /* NameViewController1.m */; };
 		EDCF2B8E1E63256100E0DBBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2B8D1E63256100E0DBBC /* main.m */; };
 		EDCF2B911E63256100E0DBBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2B901E63256100E0DBBC /* AppDelegate.m */; };
 		EDCF2B971E63256100E0DBBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCF2B951E63256100E0DBBC /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EDAEB63E1E6713850068E399 /* NameViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameViewController1.h; sourceTree = "<group>"; };
+		EDAEB63F1E6713850068E399 /* NameViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameViewController1.m; sourceTree = "<group>"; };
 		EDCF2B891E63256100E0DBBC /* RunLoopTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunLoopTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCF2B8D1E63256100E0DBBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDCF2B8F1E63256100E0DBBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				EDCF2BC01E6325D900E0DBBC /* TableViewController.m */,
 				EDCF2BC21E63279600E0DBBC /* NameViewController.h */,
 				EDCF2BC31E63279600E0DBBC /* NameViewController.m */,
+				EDAEB63E1E6713850068E399 /* NameViewController1.h */,
+				EDAEB63F1E6713850068E399 /* NameViewController1.m */,
 			);
 			path = RunLoopTest;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 			files = (
 				EDCF2B911E63256100E0DBBC /* AppDelegate.m in Sources */,
 				EDCF2BC11E6325D900E0DBBC /* TableViewController.m in Sources */,
+				EDAEB6401E6713850068E399 /* NameViewController1.m in Sources */,
 				EDCF2B8E1E63256100E0DBBC /* main.m in Sources */,
 				EDCF2BC41E63279600E0DBBC /* NameViewController.m in Sources */,
 			);

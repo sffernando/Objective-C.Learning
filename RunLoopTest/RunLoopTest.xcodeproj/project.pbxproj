@@ -15,7 +15,7 @@
 		EDCF2BA71E63256100E0DBBC /* RunLoopTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2BA61E63256100E0DBBC /* RunLoopTestTests.m */; };
 		EDCF2BB21E63256100E0DBBC /* RunLoopTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2BB11E63256100E0DBBC /* RunLoopTestUITests.m */; };
 		EDCF2BC11E6325D900E0DBBC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2BC01E6325D900E0DBBC /* TableViewController.m */; };
-		EDCF2BC41E63279600E0DBBC /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2BC31E63279600E0DBBC /* NameViewController.m */; };
+		EDCF2BC41E63279600E0DBBC /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF2BC31E63279600E0DBBC /* NameViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -511,6 +511,7 @@
 				EDCF2BB81E63256100E0DBBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDCF2BB91E63256100E0DBBC /* Build configuration list for PBXNativeTarget "RunLoopTestTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +520,7 @@
 				EDCF2BBB1E63256100E0DBBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDCF2BBC1E63256100E0DBBC /* Build configuration list for PBXNativeTarget "RunLoopTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +529,7 @@
 				EDCF2BBE1E63256100E0DBBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

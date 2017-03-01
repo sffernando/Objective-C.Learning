@@ -32,7 +32,9 @@
     [thread1 start];
     
     thread2 = [[NSThread alloc] initWithTarget:self selector:@selector(test1) object:nil];
+    NSLog(@"thread2 retainCount --------%zd",[thread2 retainCount]);
     [thread2 start];
+    NSLog(@"thread2 retainCount --------%zd",[thread2 retainCount]);
 }
 
 - (void)test {
@@ -52,8 +54,13 @@
     [runloop1 performInModes:@[NSRunLoopCommonModes] block:^{
         sleep(5);
         NSLog(@"我就是我，是颜色不一样的烟火");
+        NSLog(@"thread2 retainCount --------%zd",[thread2 retainCount]);
         [thread2 cancel];
+        NSLog(@"thread2 retainCount --------%zd",[thread2 retainCount]);
+        [thread2 release];
+        NSLog(@"thread2 retainCount --------%zd",[thread2 retainCount]);
         thread2 = nil;
+        NSLog(@"thread2 retainCount --------%zd",[thread2 retainCount]);
     }];
         NSLog(@"currentrunloop1 22222 = %p", runloop1);
         [runloop1 run];
@@ -73,6 +80,7 @@
     
     printf("aaaaaaaaaaaaaa================\n");
     
+    NSLog(@"thread2 retainCount --------%zd",[thread2 retainCount]);
 //    static dispatch_once_t onceToken;
 //    dispatch_once(&onceToken, ^{
 //        [self performSelector:@selector(test1) onThread:thread2 withObject:nil waitUntilDone:YES];

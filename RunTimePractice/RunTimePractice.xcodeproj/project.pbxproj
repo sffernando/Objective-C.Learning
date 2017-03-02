@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED1736581E67F982007A4EE8 /* ResolveMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1736571E67F982007A4EE8 /* ResolveMethodViewController.m */; };
 		ED8AA6F61E15FC5600152C76 /* OperateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8AA6F51E15FC5500152C76 /* OperateTableViewController.m */; };
 		EDA8D1F81E5C82F9006E176E /* AssociatedObjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8D1F71E5C82F9006E176E /* AssociatedObjViewController.m */; };
 		EDA8D1FB1E5C83DB006E176E /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8D1FA1E5C83DB006E176E /* NSDate+Category.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED1736561E67F982007A4EE8 /* ResolveMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResolveMethodViewController.h; sourceTree = "<group>"; };
+		ED1736571E67F982007A4EE8 /* ResolveMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResolveMethodViewController.m; sourceTree = "<group>"; };
 		ED8AA6F41E15FC5500152C76 /* OperateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperateTableViewController.h; sourceTree = "<group>"; };
 		ED8AA6F51E15FC5500152C76 /* OperateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperateTableViewController.m; sourceTree = "<group>"; };
 		EDA8D1F61E5C82F9006E176E /* AssociatedObjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociatedObjViewController.h; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				EDA8D1FD1E5C8846006E176E /* UIViewController+swizzling.m */,
 				EDA8D1FF1E5C8A63006E176E /* SwizzlingViewController.h */,
 				EDA8D2001E5C8A63006E176E /* SwizzlingViewController.m */,
+				ED1736561E67F982007A4EE8 /* ResolveMethodViewController.h */,
+				ED1736571E67F982007A4EE8 /* ResolveMethodViewController.m */,
 			);
 			path = RunTimePractice;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				ED8AA6F61E15FC5600152C76 /* OperateTableViewController.m in Sources */,
 				EDA8D1FB1E5C83DB006E176E /* NSDate+Category.m in Sources */,
 				EDEE511B1E14B51500C07F62 /* AppDelegate.m in Sources */,
+				ED1736581E67F982007A4EE8 /* ResolveMethodViewController.m in Sources */,
 				EDEE51541E14F3D500C07F62 /* ClassViewController.m in Sources */,
 				EDEE51181E14B51500C07F62 /* main.m in Sources */,
 				EDEE514B1E14B5C200C07F62 /* TableViewController.m in Sources */,

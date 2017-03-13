@@ -11,20 +11,59 @@
 
 @interface ViewController ()
 
+@property (nonatomic, assign) NSInteger test;
+
 @end
 
 @implementation ViewController
+
+- (void)dealloc
+{
+    [self removeObserver:self forKeyPath:@"test"];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(100, 200, 100, 44);
+    button.backgroundColor = [UIColor redColor];
+    [self.view addSubview:button];
+    [button addTarget:self action:@selector(ooo) forControlEvents:UIControlEventTouchUpInside];
+    [self addObserver:self forKeyPath:@"test" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
 //    NSLog(@"%lu", sizeof(NSInteger));
 //    NSLog(@"%ld", NSIntegerMax);
 //    NSLog(@"%ld", NSIntegerMin);
     [self testSort];
+    [self testApply];
     
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if ([keyPath isEqualToString:@"test"]) {
+        NSLog(@"test ===== %zd", self.test);
     }
+}
+
+-(void)ooo {
+    self.test = 100;
+}
+
+
+- (void)testApply {
+    NSArray *array = @[@1,@2,@3,@4,@5,@6,@7];
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
+    dispatch_async(queue, ^{
+        dispatch_apply([array count], queue, ^(size_t index) {
+            NSLog(@"-----%zd", [array[index] integerValue]);
+        });
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"done");
+        });
+    });
+}
 
 - (void)testSort {
     NSInteger num = 0;

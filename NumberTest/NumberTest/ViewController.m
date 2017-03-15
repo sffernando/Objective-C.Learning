@@ -12,6 +12,8 @@
 @interface ViewController ()
 
 @property (nonatomic, assign) NSInteger test;
+@property(nonatomic, copy) NSMutableArray *array;
+
 
 @end
 
@@ -38,6 +40,24 @@
     [self testSort];
     [self testApply];
     
+//    self.array = [NSMutableArray array];
+    [self.array addObject:@1];
+    [self.array insertObject:@10 atIndex:0];
+    [self.array exchangeObjectAtIndex:0 withObjectAtIndex:1];
+    
+    
+    NSArray *a1 = [NSArray new];
+    NSArray *a2 = [NSArray new];
+    NSArray *aaaa = [NSArray arrayWithObjects:a1,a2, nil];
+    NSArray *array2 = [aaaa copy];
+    
+}
+
+- (NSMutableArray *)array {
+    if (!_array) {
+        _array = [NSMutableArray array];
+    }
+    return _array;
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
